@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>关于我</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 导航栏 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="about.html">曲阔</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="about.html">个人介绍</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">我的简历</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">登出</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <img src="profile.jpg" class="img-fluid rounded-circle mb-3" alt="头像">
+        <h3>曲阔</h3>
+        <p>前端开发工程师</p>
+      </div>
+      <div class="col-md-8">
+        <h4>自我介绍</h4>
+        <p>我是一名前端开发者，热爱技术，擅长使用 HTML、CSS、JavaScript 及 Vue / React 开发高质量网页应用。</p>
+        <p>具有丰富的项目经验，关注用户体验与界面交互。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-5" id="photos">
+    <h4 class="text-center mb-4">我的照片</h4>
+    <div id="carouselPhotos" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img1.jpg" class="d-block w-100 rounded" alt="img1">
+        </div>
+        <div class="carousel-item">
+          <img src="img2.jpg" class="d-block w-100 rounded" alt="img2">
+        </div>
+        <div class="carousel-item">
+          <img src="img3.jpg" class="d-block w-100 rounded" alt="img3">
+        </div>
+        <div class="carousel-item">
+          <img src="img4.jpg" class="d-block w-100 rounded" alt="img4">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselPhotos" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselPhotos" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 曲阔 版权所有</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

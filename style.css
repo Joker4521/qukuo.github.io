@@ -1,0 +1,132 @@
+/* ===== 通用基础样式 ===== */
+body {
+  font-family: 'Helvetica Neue', 'Microsoft YaHei', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ===== 页面头部样式 ===== */
+header {
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #dee2e6;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #212529;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+/* ===== 各个内容模块 ===== */
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  color: #007bff;
+  border-left: 5px solid #007bff;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+/* 文字内容 */
+section p,
+section li {
+  font-size: 1rem;
+  color: #495057;
+}
+
+ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+/* ===== 视频样式 ===== */
+.video video {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  border-radius: 8px;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== 轮播容器样式 ===== */
+#slideshow {
+  width: 100%;
+  max-width: 720px;
+  height: 400px;
+  margin: 20px auto;
+  background-color: #e9ecef;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  transition: background-image 0.6s ease-in-out;
+}
+
+/* ===== 页脚 ===== */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #343a40;
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+/* ===== 响应式布局 ===== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section h2 {
+    font-size: 1.3rem;
+  }
+
+  section p,
+  section li {
+    font-size: 0.95rem;
+  }
+
+  #slideshow {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  section h2 {
+    font-size: 1.1rem;
+  }
+
+  section p,
+  section li {
+    font-size: 0.9rem;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
